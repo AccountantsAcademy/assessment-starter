@@ -1,0 +1,9 @@
+# Add files here to ignore them from prettier formatting
+/dist
+/coverage
+/.nx/cache
+/.nx/workspace-data
+/.nx/self-healing
+/apps/graphql-api/src/llm/mock-llm.service.js
+/apps/graphql-api/src/llm/mock-llm.service.d.ts
+pnpm-lock.yaml

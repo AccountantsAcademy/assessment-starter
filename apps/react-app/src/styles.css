@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+/* Tailwind 4 defaults borders to the text color; keep Tailwind 3's light gray */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+/* You can add global styles to this file, and also import other style files */

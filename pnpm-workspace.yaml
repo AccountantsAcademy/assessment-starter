@@ -1,0 +1,15 @@
+allowBuilds:
+  '@apollo/protobufjs': false
+  '@parcel/watcher': true
+  '@swc/core': true
+  nx: true
+  unrs-resolver: true
+peerDependencyRules:
+  allowedVersions:
+    # @nestjs/apollo 13 always installs the old GraphQL Playground plugin, which
+    # only supports Apollo Server 4. The app doesn't use it (it uses Apollo
+    # Sandbox), so Apollo Server 5 is fine.
+    '@apollo/server-plugin-landing-page-graphql-playground>@apollo/server': '5'
+    # Express is only an optional peer of @nx/react (module federation dev
+    # servers); NestJS 11 uses Express 5
+    '@nx/react>express': '5'

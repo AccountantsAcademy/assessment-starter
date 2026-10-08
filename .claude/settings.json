@@ -1,0 +1,5 @@
+{
+  "permissions": {
+    "deny": ["Read(./apps/graphql-api/src/llm/mock-llm.service.js)"]
+  }
+}
